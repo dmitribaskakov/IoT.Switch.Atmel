@@ -20,14 +20,14 @@ class SignalSwith {
 	bool setChanged() {_hasChanged = true; return _hasChanged;};
 	//bool hasSended() {return _hasSended;};
 	bool SendState() { _hasChanged = false; return _state;};
-	uint8_t opposited;             //Противоположный, оба не могут быть одновременно включены
+	uint8_t opposited;             //РџСЂРѕС‚РёРІРѕРїРѕР»РѕР¶РЅС‹Р№, РѕР±Р° РЅРµ РјРѕРіСѓС‚ Р±С‹С‚СЊ РѕРґРЅРѕРІСЂРµРјРµРЅРЅРѕ РІРєР»СЋС‡РµРЅС‹
 	private:
 	bool _isEnable;
 	bool _stateIsOff;
 	bool _state;
 	bool _hasChanged;
-	uint32_t _timerMaxOn;           //Максимальное время в включенном состоянии если 0 то не используется
-	uint32_t _timerLastChangeOn;    //Время последнего изменения состояния
+	uint32_t _timerMaxOn;           //РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ РІСЂРµРјСЏ РІ РІРєР»СЋС‡РµРЅРЅРѕРј СЃРѕСЃС‚РѕСЏРЅРёРё РµСЃР»Рё 0 С‚Рѕ РЅРµ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ
+	uint32_t _timerLastChangeOn;    //Р’СЂРµРјСЏ РїРѕСЃР»РµРґРЅРµРіРѕ РёР·РјРµРЅРµРЅРёСЏ СЃРѕСЃС‚РѕСЏРЅРёСЏ
 	//	bool _hasSended;
 };
 
