@@ -1,7 +1,7 @@
 // Arduino DNS client for WizNet5100-based Ethernet shield
 // (c) Copyright 2009-2010 MCQN Ltd.
 // Released under Apache License, version 2.0
-
+#include <Arduino.h>
 #include "w5500.h"
 #include "EthernetUdp2.h"
 #include "util.h"
@@ -9,7 +9,7 @@
 #include "Dns.h"
 #include <string.h>
 //#include <stdlib.h>
-#include "Arduino.h"
+
 
 
 #define SOCKET_NONE	255
