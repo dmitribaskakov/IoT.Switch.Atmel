@@ -12,10 +12,6 @@
 #include "Ethernet2.h"
 #include "mqttClient.h"
 #include "StatusLed.h"
-uint32_t timeToStartMainLoop = 0;
-#define timeMainLoopMax 25  // время для сна
-StatusLed statusLed(13);
-
 
 void setup();
 void loop();
@@ -43,8 +39,8 @@ IPAddress mqttServer(192, 168, 1, 39);							// это для боевого mos
 EthernetClient ethernetClient;
 MQTTClient mqttClient(mqttServer, 1883, ethernetClient);
 
-uint32_t timeToStartMainLoop=0;
-#define timeMainLoopMax 25
+uint32_t timeToStartMainLoop = 0;
+#define timeMainLoopMax 25  // время для сна
 #define Serial_baud_count 115200
 
 void setup() {
