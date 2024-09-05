@@ -454,7 +454,7 @@ void SignalWorker::process() {
 	//if (reader->isButtonClick(Sw31)) {/* 1.3. Прихожая - На входе */};
 	if (reader->isButtonClick(Sw32)) {/* 1.3. Прихожая - На входе */
 		runScript(Scr01); //	Никого нет дома
-		runScript(0x0D); //	1. Рольставни - закрыть
+		runScript(Scr0D); //	1. Рольставни - закрыть
 	};
 	//if (reader->isButtonClick(Sw33)) {/* 1.3. Прихожая - На входе */};
 	//if (reader->isButtonClick(Sw34)) {/* 1.3. Прихожая - На входе */};

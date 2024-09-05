@@ -13,9 +13,6 @@
 #include "mqttClient.h"
 #include "StatusLed.h"
 
-void setup();
-void loop();
-
 History history;
 BoardReader reader;
 BoardSender sender;
@@ -32,7 +29,7 @@ IPAddress mqttServer(192, 168, 1, 39);							// это для боевого mos
 
 //byte mac_address[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };	// это для теста
 //IPAddress local_ip(192, 168, 1, 51);							// это для теста
-//IPAddress mqttServer(192, 168, 1, 44);							// это для теста mosquito on prometey
+//IPAddress mqttServer(192, 168, 1, 44);						// это для теста mosquito on prometey
 
 //byte mac_address[] = { 0x90, 0xA2, 0xDA, 0x0D, 0x97, 0xFB };	
 
